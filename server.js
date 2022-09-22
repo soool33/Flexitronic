@@ -14,12 +14,11 @@ app.use(express.urlencoded({ extended: true }));
 
 
 
-
-
-
-
 //Routes
 app.use('/api/user', userRoutes);
+
+
+
 // Port du serveur
 app.listen(port, () => {
     console.log("vous etes sur le port " + " " + port);
