@@ -25,7 +25,6 @@ module.exports.signUp = async (req, res) => {
 
 module.exports.signIn = async (req, res) => {
     const { email, password } = req.body
-
     try {
         const user = await UserModel.login(email, password);
         const token = createToken(user._id)
