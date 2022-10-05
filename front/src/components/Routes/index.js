@@ -1,15 +1,16 @@
 import React from 'react';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Mails from '../../pages/Mails';
 import Home from '../../pages/Home';
+import Profil from '../../pages/Profil';
 
 const index = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" exact component={Home} />
-                <Route path="/contact" exact component={Mails} />
-                <Navigate to="/" />
+                <Route path="/" element={<Home/>} />
+                <Route path="/contact" element={<Mails/>} />
+                <Route path="/profil" element={<Profil/>} />
             </Routes>
         </BrowserRouter>
     )
