@@ -1,9 +1,12 @@
 import React from 'react';
+import ContactForm from '../components/contact';
 
 const Home = () => {
     return (
         <div>
-           <h1>Voici la page d'accueil</h1>
+            <ContactForm />
+            
+
         </div>
     )
 }
