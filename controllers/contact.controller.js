@@ -10,27 +10,27 @@ module.exports.contact = async (req, res) => {
         port: 2525,
         // service: "gmail",
         auth: {
-          user: process.env.EMAIL_USER,
-          pass: process.env.EMAIL_SECRET,
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_SECRET,
         },
         tls: {
-          rejectUnauthorized: false,
+            rejectUnauthorized: false,
         },
-      });
-      const { from, name, subject, text} = req.body
-      var mailOptions = {
+    });
+    const { from, name, subject, text} = req.body
+    var mailOptions = {
         from: req.body.from,
         to: "contact@flexitronic.com",
         name: req.body.name,
         subject: req.body.subject,
         text: req.body.text,
-      };
-      let info = await transporter.sendMail(mailOptions);
+    };
+    let info = await transporter.sendMail(mailOptions);
 
-      console.log("les options: ", mailOptions, info.response);
-      const contact = await ContactModel.create({ from, name, subject, text});
-      res.status(201).json({contact: contact.name});
-      return contact;
+    console.log("les options: ", mailOptions, info.response);
+    const contact = await ContactModel.create({ from, name, subject, text});
+    res.status(201).json({contact: contact.name});
+    return contact;
 }
 
 module.exports.messages = async (req, res) => {
