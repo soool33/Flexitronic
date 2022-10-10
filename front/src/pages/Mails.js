@@ -37,4 +37,4 @@ const Mails = () => {
     )
 }
 
-export default Mails
+export default Mails 
