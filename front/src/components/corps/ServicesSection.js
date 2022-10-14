@@ -28,7 +28,7 @@ const ServicesSection = () => {
             </div>
             <div className="col-lg-4 col-md-6" data-aos="zoom-in">
               <div className="box">
-                <div className="icon"><a href="/"><i class="bi bi-tools"></i></a></div>
+                <div className="icon"><a href="/"><i className="bi bi-tools"></i></a></div>
                 <h4 className="title"><a href="/">PROTOTYPAGE</a></h4>
                 <p className="description">Concrétisons vos idées afin d'éviter les contraintes physiques, techniques ou financières non anticipées (Preuve de concept) </p>
               </div>
