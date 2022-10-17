@@ -1,6 +1,6 @@
 import React from 'react';
 import AOS from 'aos'
-import PureCounter from '@srexi/purecounterjs';
+import PureCounter from '@srexi/purecounterjs/purecounter';
 
 const Facts = () => {
   AOS.init();
