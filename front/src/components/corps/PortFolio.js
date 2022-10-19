@@ -2,6 +2,7 @@ import React from 'react';
 import AOS from 'aos';
 //import Isotope from 'isotope-layout';
 import GLightbox from 'glightbox';
+import Card from 'react-bootstrap/Card';
 
 const PortFolio = () => {
   AOS.init();
@@ -56,36 +57,35 @@ const PortFolio = () => {
 
         <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="./vendor/img/portfolio-1.jpg" className="img-fluid" alt="balance_connectée_ruche" width="2048" height="2048"/>
-            <div className="portfolio-info">
-              <h4>Balance connectée</h4>
-              <p>Supervision des essaims à distance</p>
+          <Card className='col-lg-4 col-md-6 portfolio-item filter-app'>
+            <Card.Img  src="./vendor/img/portfolio-1.jpg" className="img-fluid" alt="balance_connectée_ruche" width="2048" height="2048" />
+            <Card.Body className="portfolio-info">
+              <Card.Title><h4>Balance connectée</h4></Card.Title>
+              <Card.Text><p>Supervision des essaims à distance</p></Card.Text>
               <a href="./vendor/img/portfolio-1.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Agrandir l'image"><i className="bx bx-plus"></i></a>
               <a href="portfolio-details.html" className="details-link" title="Voir le projet en détails"><i className="bx bx-link"></i></a>
-            </div>
-          </div>
+            </Card.Body>
+          </Card>
 
-          <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="./vendor/img/portfolio-2.jpg" className="img-fluid" alt="antivol_connecté_ruche" width="2048" height="2048"/>
-            <div className="portfolio-info">
-              <h4>Antivol connecté</h4>
-              <p>Conçu pour être intégré dans une ruche</p>
+          <Card className='col-lg-4 col-md-6 portfolio-item filter-app'>
+            <Card.Img  src="./vendor/img/portfolio-2.jpg" className="img-fluid" alt="balance_connectée_ruche" width="2048" height="2048" />
+            <Card.Body className="portfolio-info">
+              <Card.Title><h4>Antivol connecté</h4></Card.Title>
+              <Card.Text><p>Conçu pour être intégré dans une ruche</p></Card.Text>
               <a href="./vendor/img/portfolio-2.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Agrandir l'image"><i className="bx bx-plus"></i></a>
-              <a href="portfolio-details0.html" className="details-link" title="Voir le projet en détails"><i className="bx bx-link"></i></a>
-            </div>
-          </div>
+              <a href="portfolio-details.html" className="details-link" title="Voir le projet en détails"><i className="bx bx-link"></i></a>
+            </Card.Body>
+          </Card>
 
-          <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="./vendor/img/portfolio-3.jpg" className="img-fluid" alt="application_web_Miecolo" width="1048" height="1048"/>
-            <div className="portfolio-info">
-              <h4>Application Miecolo</h4>
-              <p>Développement du site internet miecolo.com</p>
+          <Card className='col-lg-4 col-md-6 portfolio-item filter-app'>
+            <Card.Img  src="./vendor/img/portfolio-3.jpg" className="img-fluid" alt="balance_connectée_ruche" width="2048" height="2048" />
+            <Card.Body className="portfolio-info">
+              <Card.Title><h4>Application Miecolo</h4></Card.Title>
+              <Card.Text><p>Développement du site internet miecolo.com</p></Card.Text>
               <a href="./vendor/img/portfolio-3.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Agrandir l'image"><i className="bx bx-plus"></i></a>
-              <a href="portfolio-details00.html" className="details-link" title="Voir le projet en détails"><i className="bx bx-link"></i></a>
-            </div>
-          </div>
-
+              <a href="portfolio-details.html" className="details-link" title="Voir le projet en détails"><i className="bx bx-link"></i></a>
+            </Card.Body>
+          </Card>
         </div>
 
       </div>
