@@ -38,9 +38,7 @@ const Header = () => {
       <div className="container d-flex justify-content-between align-items-center">
 
         <div id="logo">
-          <a href="index.html"><img src="./vendor/img/logo.png" alt="logo_flexitronic" /></a>
-          {/* Uncomment below if you prefer to use a text logo */}
-          {/* <!--<h1><a href="index.html">Regna</a></h1>--> */}
+          <a href="/"><img src="./vendor/img/logo.png" alt="logo_flexitronic" /></a>
         </div>
 
         <nav id="navbar" className="navbar">

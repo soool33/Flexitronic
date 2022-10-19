@@ -1,4 +1,5 @@
 import React from 'react';
+import About from './About';
 import Devis from './Devis';
 import Facts from './Facts';
 import Hero from './Hero';
@@ -12,6 +13,7 @@ const Corps = () => {
       <Hero />
       <ServicesSection />
       <Devis />
+      <About />
       <Facts />
       <PortFolio />
       <Team />
