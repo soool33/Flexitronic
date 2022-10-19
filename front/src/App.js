@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Routes from "./components/Routes";
-//import { UidContext } from "./components/AppContext";
+import { UidContext } from "./components/AppContext";
 import axios from "axios";
 
 const App = () => {
@@ -22,9 +22,9 @@ const App = () => {
     }, [uid]);
 
     return (
-        //<UidContext.Provider value={uid}>
+        <UidContext.Provider value={uid}>
             <Routes />
-        //</UidContext.Provider>
+        </UidContext.Provider>
     )
 }
 

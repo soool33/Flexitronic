@@ -151,3 +151,27 @@ iframe {
     transform: rotate(360deg);
   }
 }
+
+#sign-up-form{
+  input, textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+
+  input:focus, textarea:focus {
+    background-color: #FF912B;
+  }
+
+  input[type=submit] {
+    background: #FF912B;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+  }
+
+  input[type=submit]:hover {
+    background: #ffb52b;
+  }
+}
