@@ -61,7 +61,7 @@ const PortFolio = () => {
             <Card.Img  src="./vendor/img/portfolio-1.jpg" className="img-fluid" alt="balance_connectée_ruche" width="2048" height="2048" />
             <Card.Body className="portfolio-info">
               <Card.Title><h4>Balance connectée</h4></Card.Title>
-              <Card.Text><p>Supervision des essaims à distance</p></Card.Text>
+              <Card.Text>Supervision des essaims à distance</Card.Text>
               <a href="./vendor/img/portfolio-1.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Agrandir l'image"><i className="bx bx-plus"></i></a>
               <a href="portfolio-details.html" className="details-link" title="Voir le projet en détails"><i className="bx bx-link"></i></a>
             </Card.Body>
@@ -71,7 +71,7 @@ const PortFolio = () => {
             <Card.Img  src="./vendor/img/portfolio-2.jpg" className="img-fluid" alt="balance_connectée_ruche" width="2048" height="2048" />
             <Card.Body className="portfolio-info">
               <Card.Title><h4>Antivol connecté</h4></Card.Title>
-              <Card.Text><p>Conçu pour être intégré dans une ruche</p></Card.Text>
+              <Card.Text>Conçu pour être intégré dans une ruche</Card.Text>
               <a href="./vendor/img/portfolio-2.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Agrandir l'image"><i className="bx bx-plus"></i></a>
               <a href="portfolio-details.html" className="details-link" title="Voir le projet en détails"><i className="bx bx-link"></i></a>
             </Card.Body>
@@ -81,7 +81,7 @@ const PortFolio = () => {
             <Card.Img  src="./vendor/img/portfolio-3.jpg" className="img-fluid" alt="balance_connectée_ruche" width="2048" height="2048" />
             <Card.Body className="portfolio-info">
               <Card.Title><h4>Application Miecolo</h4></Card.Title>
-              <Card.Text><p>Développement du site internet miecolo.com</p></Card.Text>
+              <Card.Text>Développement du site internet miecolo.com</Card.Text>
               <a href="./vendor/img/portfolio-3.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Agrandir l'image"><i className="bx bx-plus"></i></a>
               <a href="portfolio-details.html" className="details-link" title="Voir le projet en détails"><i className="bx bx-link"></i></a>
             </Card.Body>

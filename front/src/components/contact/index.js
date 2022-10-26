@@ -119,7 +119,7 @@ const ContactForm = () => {
                       onChange={(e) => setName(e.target.value)}
                       value={name}
                     />
-                    <div className="pseudo error"></div>
+                    <div className="pseudo error" style={{color: '#ff912b'}}></div>
                   </div>
                   <div className='form-group mt-3'>
                     <input
@@ -131,7 +131,7 @@ const ContactForm = () => {
                       onChange={(e) => setFrom(e.target.value)}
                       value={from}
                     />
-                    <div className="email error"></div>
+                    <div className="email error" style={{color: '#ff912b'}}></div>
                   </div>
 
                   <div className='form-group mt-3'>
@@ -144,7 +144,7 @@ const ContactForm = () => {
                       onChange={(e) => setSubject(e.target.value)}
                       value={subject}
                     />
-                    <div className="password error"></div>
+                    <div className="password error" style={{color: '#ff912b'}}></div>
                   </div>
 
                   <div className='form-group mt-3'>

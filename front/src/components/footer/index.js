@@ -6,8 +6,8 @@ const Footer = () => {
 
   return (
     <footer id="footer">
-      <div class="footer-top">
-        <div class="container">
+      <div className="footer-top">
+        <div className="container">
 
         </div>
       </div>
