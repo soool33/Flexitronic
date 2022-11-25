@@ -111,6 +111,14 @@ const SignUpForm = () => {
                     />
                     <div className="password-confirm error"></div>
                     <br />
+                    <input type="checkbox" id="terms" />
+                    <label htmlFor="terms">
+                        J'accepte les{" "}
+                        <a href="/" target="_blank" rel="noopener noreferrer">
+                        conditions générales
+                        </a>
+                    </label>
+                    <div className="terms error"></div>
                     <input type="submit" value="Valider inscription" />
                 </form>
             )}

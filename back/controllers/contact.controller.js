@@ -6,28 +6,56 @@ const ObjectId = require('mongoose').Types.ObjectId;
 // envoie mail + enregistrement bdd
 module.exports.contact = async (req, res) => {
     var transporter = nodemailer.createTransport({
-        host: "smtp.mailtrap.io",
-        port: 2525,
-        // service: "gmail",
+        host: "pro2.mail.ovh.net",
+        port: 587,
+        requireTLS: true,
+        secure: false,
+        //service: "outlook365",
         auth: {
             user: process.env.EMAIL_USER,
             pass: process.env.EMAIL_SECRET,
         },
-        tls: {
-            rejectUnauthorized: false,
-        },
+        //debug: true,
+        //logger:true,
+         tls: {
+        //     rejectUnauthorized: true,
+             //ciphers:'SSLv3'
+         },
     });
+    
     const { from, name, subject, text} = req.body
+    let a = "exm1@gmail.com"
+    let b = "exm2@gmail.com"
+    let c = a + "," + b
+    console.log(c);
+
+    let mails = ["samyberrahou@gmail.com","quentin.valenti@flexitronic.fr"]
+
+    let result = "";
+
+    for (let i = 0; i < mails.length; i++) {
+    result += mails[i] + ",";
+    }
+
+result = result.slice(0, -1);
+
+console.log(result)
+    
     var mailOptions = {
-        from: req.body.from,
-        to: "contact@flexitronic.com",
+        from: "quentin.valenti@flexitronic.fr",
+        to: result,
         name: req.body.name,
         subject: req.body.subject,
         text: req.body.text,
     };
-    let info = await transporter.sendMail(mailOptions);
+    
+    try {
+        let info = await transporter.sendMail(mailOptions);
+    } catch (err){
+        console.log("mail erreure : ",err);
+    }
 
-    console.log("les options: ", mailOptions, info.response);
+    //console.log("les options: ", mailOptions, info.response);
     const contact = await ContactModel.create({ from, name, subject, text});
     res.status(201).json({contact: contact.name});
     return contact;

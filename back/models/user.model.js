@@ -48,9 +48,9 @@ const userSchema = new mongoose.Schema(
       if (auth) {
         return user;
       }
-      throw Error('Mot de passe incorrecte')
+      throw Error('password incorrecte')
     }
-    throw Error('Email incorrecte')
+    throw Error('email incorrecte')
   }
   
   const UserModel = mongoose.model("user", userSchema);
